@@ -30,7 +30,6 @@
 			<groupId>com.interzonedev</groupId>
 			<artifactId>sprintfix</artifactId>
 			<version>0.2.6</version>
-			<scope>test</scope>
 		</dependency>
 
 		<dependency>
