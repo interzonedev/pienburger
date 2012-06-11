@@ -11,6 +11,7 @@ import org.springframework.test.context.ContextConfiguration;
 
 import com.interzonedev.sprintfix.AbstractIntegrationTest;
 import com.interzonedev.spunkfix.driver.Browser;
+import com.interzonedev.spunkfix.driver.BrowserOperations;
 import com.interzonedev.spunkfix.driver.WebDriverFactory;
 
 @ContextConfiguration(locations = { "classpath:spring/com/interzonedev/spunkfix/applicationContext-spunkfix.xml" })
@@ -23,14 +24,14 @@ public abstract class AbstractFunctionalTest extends AbstractIntegrationTest {
 
 	protected WebDriver driver;
 
-	protected FunctionalTestHelper functionalTestHelper;
+	protected BrowserOperations browserOperations;
 
 	protected abstract FunctionalTestProperties getFunctionalTestProperties();
 
 	@Before
 	public void beforeTest() {
 		FunctionalTestProperties functionalTestProperties = getFunctionalTestProperties();
-		functionalTestHelper = new FunctionalTestHelper(functionalTestProperties);
+		browserOperations = new BrowserOperations(functionalTestProperties);
 		Browser browser = functionalTestProperties.getBrowser();
 		driver = webDriverFactory.getWebDriver(browser);
 	}

@@ -1,4 +1,4 @@
-package com.interzonedev.spunkfix;
+package com.interzonedev.spunkfix.driver;
 
 import java.util.List;
 
@@ -9,13 +9,15 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class FunctionalTestHelper {
+import com.interzonedev.spunkfix.FunctionalTestProperties;
+
+public class BrowserOperations {
 
 	private String applicationUrl;
 
 	private Long elementWaitTimeoutInSeconds;
 
-	public FunctionalTestHelper(FunctionalTestProperties functionalTestProperties) {
+	public BrowserOperations(FunctionalTestProperties functionalTestProperties) {
 		applicationUrl = functionalTestProperties.getApplicationUrl();
 		elementWaitTimeoutInSeconds = functionalTestProperties.getElementWaitTimeoutInSeconds();
 	}
