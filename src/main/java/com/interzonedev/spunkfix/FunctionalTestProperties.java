@@ -1,6 +1,10 @@
 package com.interzonedev.spunkfix;
 
+import com.interzonedev.spunkfix.driver.Browser;
+
 public class FunctionalTestProperties {
+
+	private Browser browser;
 
 	private String applicationUrl;
 
@@ -9,13 +13,23 @@ public class FunctionalTestProperties {
 	public FunctionalTestProperties() {
 	}
 
-	public FunctionalTestProperties(String applicationUrl) {
+	public FunctionalTestProperties(Browser browser, String applicationUrl) {
+		this.browser = browser;
 		this.applicationUrl = applicationUrl;
 	}
 
-	public FunctionalTestProperties(String applicationUrl, Long elementWaitTimeoutInSeconds) {
+	public FunctionalTestProperties(Browser browser, String applicationUrl, Long elementWaitTimeoutInSeconds) {
+		this.browser = browser;
 		this.applicationUrl = applicationUrl;
 		this.elementWaitTimeoutInSeconds = elementWaitTimeoutInSeconds;
+	}
+
+	public Browser getBrowser() {
+		return browser;
+	}
+
+	public void setBrowser(Browser browser) {
+		this.browser = browser;
 	}
 
 	public String getApplicationUrl() {

@@ -2,10 +2,6 @@ package com.interzonedev.spunkfix;
 
 import java.util.List;
 
-import javax.annotation.PostConstruct;
-import javax.inject.Inject;
-import javax.inject.Named;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,18 +9,13 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-@Named("functionalTestHelper")
 public class FunctionalTestHelper {
-
-	@Inject
-	private FunctionalTestProperties functionalTestProperties;
 
 	private String applicationUrl;
 
 	private Long elementWaitTimeoutInSeconds;
 
-	@PostConstruct
-	public void init() {
+	public FunctionalTestHelper(FunctionalTestProperties functionalTestProperties) {
 		applicationUrl = functionalTestProperties.getApplicationUrl();
 		elementWaitTimeoutInSeconds = functionalTestProperties.getElementWaitTimeoutInSeconds();
 	}
@@ -98,5 +89,4 @@ public class FunctionalTestHelper {
 		waitForElements(driver, by, timeOutInSeconds);
 		return driver.findElements(by);
 	}
-
 }
