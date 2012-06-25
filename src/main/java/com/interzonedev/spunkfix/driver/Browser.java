@@ -3,6 +3,11 @@ package com.interzonedev.spunkfix.driver;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * An enumeration of the browser executables supported by the spunkfix functional testing framework.
+ * 
+ * @author "Mark Markarian" <mark@interzonedev.com>
+ */
 public enum Browser {
 	FIREFOX("firefox"), CHROME("chrome"), SAFARI("safari"), HTMLUNIT("htmlUnit"), IE("internetExplorer");
 

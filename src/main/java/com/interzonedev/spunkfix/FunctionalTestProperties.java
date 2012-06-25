@@ -2,6 +2,16 @@ package com.interzonedev.spunkfix;
 
 import com.interzonedev.spunkfix.driver.Browser;
 
+/**
+ * Value object that holds the properties used in a functional test. Holds values for the default timeout when waiting
+ * for a page load or for elements to appear in a page, the URL of the application under test and a {@link Browser}
+ * instance to open for the test.
+ * 
+ * An instance of this class is meant to be supplied to the spunkfix framework for each implementing functional test to
+ * specify how to run each test.
+ * 
+ * @author "Mark Markarian" <mark@interzonedev.com>
+ */
 public class FunctionalTestProperties {
 
 	private Browser browser;
