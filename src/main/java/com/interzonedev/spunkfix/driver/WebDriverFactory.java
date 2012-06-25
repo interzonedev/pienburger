@@ -48,38 +48,10 @@ public class WebDriverFactory {
 	 */
 	public WebDriver getWebDriver(Browser browser) {
 
-		String beanName = getWebDriverBeanName(browser);
+		String beanName = browser.id() + "Driver";
 
 		WebDriver driver = (WebDriver) applicationContext.getBean(beanName);
 
 		return driver;
 	}
-
-	private String getWebDriverBeanName(Browser browser) {
-
-		String beanName = null;
-
-		switch (browser) {
-			case FIREFOX:
-				beanName = "firefoxDriver";
-				break;
-			case HTMLUNIT:
-				beanName = "htmlUnitDriver";
-				break;
-			case SAFARI:
-				beanName = "safariDriver";
-				break;
-			case CHROME:
-				beanName = "chromeDriver";
-				break;
-			case IE:
-				beanName = "internetExplorerDriver";
-				break;
-			default:
-				throw new IllegalArgumentException("Unsupported browser: " + browser);
-		}
-
-		return beanName;
-	}
-
 }
