@@ -1,10 +1,10 @@
-package com.interzonedev.spunkfix.driver;
+package com.interzonedev.pienburger.driver;
 
 import java.util.LinkedList;
 import java.util.List;
 
 /**
- * An enumeration of the browser executables supported by the spunkfix functional testing framework.
+ * An enumeration of the browser executables supported by the pienburger functional testing framework.
  * 
  * @author "Mark Markarian" <mark@interzonedev.com>
  */

@@ -1,4 +1,4 @@
-package com.interzonedev.spunkfix;
+package com.interzonedev.pienburger;
 
 import javax.inject.Inject;
 
@@ -9,12 +9,12 @@ import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.springframework.test.context.ContextConfiguration;
 
+import com.interzonedev.pienburger.driver.Browser;
+import com.interzonedev.pienburger.driver.BrowserOperations;
+import com.interzonedev.pienburger.driver.WebDriverFactory;
 import com.interzonedev.sprintfix.AbstractIntegrationTest;
 import com.interzonedev.sprintfix.dataset.DataSet;
 import com.interzonedev.sprintfix.dataset.DataSets;
-import com.interzonedev.spunkfix.driver.Browser;
-import com.interzonedev.spunkfix.driver.BrowserOperations;
-import com.interzonedev.spunkfix.driver.WebDriverFactory;
 
 /**
  * Top level functional test class meant to be run with a JUnit test runner. This is meant to be subclassed by any
@@ -24,11 +24,11 @@ import com.interzonedev.spunkfix.driver.WebDriverFactory;
  * can be used on test classes and methods to set up and tear down any datasources involved in the functional tests. The
  * sprintfix dataset testers can also be used.
  * 
- * Running this will create the spunkfix Spring application context.
+ * Running this will create the pienburger Spring application context.
  * 
  * @author "Mark Markarian" <mark@interzonedev.com>
  */
-@ContextConfiguration(locations = { "classpath:spring/com/interzonedev/spunkfix/applicationContext-spunkfix.xml" })
+@ContextConfiguration(locations = { "classpath:spring/com/interzonedev/pienburger/applicationContext-pienburger.xml" })
 public abstract class AbstractFunctionalTest extends AbstractIntegrationTest {
 
 	protected Log log = LogFactory.getLog(getClass());

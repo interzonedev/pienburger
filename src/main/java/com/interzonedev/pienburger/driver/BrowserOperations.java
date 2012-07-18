@@ -1,4 +1,4 @@
-package com.interzonedev.spunkfix.driver;
+package com.interzonedev.pienburger.driver;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.interzonedev.spunkfix.FunctionalTestProperties;
+import com.interzonedev.pienburger.FunctionalTestProperties;
 
 /**
  * Implements helper methods that perform common operations on the live web browser opened for each test. Each instance
