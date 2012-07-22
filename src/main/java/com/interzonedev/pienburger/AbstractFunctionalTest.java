@@ -12,17 +12,17 @@ import org.springframework.test.context.ContextConfiguration;
 import com.interzonedev.pienburger.driver.Browser;
 import com.interzonedev.pienburger.driver.BrowserOperations;
 import com.interzonedev.pienburger.driver.WebDriverFactory;
-import com.interzonedev.sprintfix.AbstractIntegrationTest;
-import com.interzonedev.sprintfix.dataset.DataSet;
-import com.interzonedev.sprintfix.dataset.DataSets;
+import com.interzonedev.zankou.AbstractIntegrationTest;
+import com.interzonedev.zankou.dataset.DataSet;
+import com.interzonedev.zankou.dataset.DataSets;
 
 /**
  * Top level functional test class meant to be run with a JUnit test runner. This is meant to be subclassed by any
  * functional tests that require a live browser running on the desktop to load the page under test.
  * 
- * This leverages the sprintfix integration testing framework so that {@link DataSets} or {@link DataSet} annotations
- * can be used on test classes and methods to set up and tear down any datasources involved in the functional tests. The
- * sprintfix dataset testers can also be used.
+ * This leverages the Zankou integration testing framework so that {@link DataSets} or {@link DataSet} annotations can
+ * be used on test classes and methods to set up and tear down any datasources involved in the functional tests. The
+ * Zankou dataset testers can also be used.
  * 
  * Running this will create the pienburger Spring application context.
  * 

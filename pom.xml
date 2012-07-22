@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pienburger</artifactId>
-	<version>0.1.2-SNAPSHOT</version>
+	<version>0.1.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>Spring Based Functional Test Fixture</name>
@@ -29,7 +29,7 @@
 		<dependency>
 			<groupId>com.interzonedev</groupId>
 			<artifactId>zankou</artifactId>
-			<version>0.2.6</version>
+			<version>0.2.7</version>
 		</dependency>
 
 		<dependency>
