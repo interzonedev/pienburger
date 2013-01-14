@@ -1,6 +1,7 @@
 package com.interzonedev.pienburger;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
 import org.junit.After;
 import org.junit.Before;
@@ -35,6 +36,7 @@ public abstract class AbstractFunctionalTest extends AbstractIntegrationTest {
 	protected final Logger log = (Logger) LoggerFactory.getLogger(getClass());
 
 	@Inject
+	@Named("webDriverFactory")
 	private WebDriverFactory webDriverFactory;
 
 	/**

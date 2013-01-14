@@ -11,7 +11,7 @@ import org.springframework.context.ApplicationContext;
  * 
  * @author "Mark Markarian" <mark@interzonedev.com>
  */
-@Named("driverFactory")
+@Named("webDriverFactory")
 public class WebDriverFactory {
 
 	@Inject
