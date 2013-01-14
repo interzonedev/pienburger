@@ -2,12 +2,13 @@ package com.interzonedev.pienburger;
 
 import javax.inject.Inject;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
+import org.slf4j.LoggerFactory;
 import org.springframework.test.context.ContextConfiguration;
+
+import ch.qos.logback.classic.Logger;
 
 import com.interzonedev.pienburger.driver.Browser;
 import com.interzonedev.pienburger.driver.BrowserOperations;
@@ -31,7 +32,7 @@ import com.interzonedev.zankou.dataset.DataSets;
 @ContextConfiguration(locations = { "classpath:spring/com/interzonedev/pienburger/applicationContext-pienburger.xml" })
 public abstract class AbstractFunctionalTest extends AbstractIntegrationTest {
 
-	protected Log log = LogFactory.getLog(getClass());
+	protected final Logger log = (Logger) LoggerFactory.getLogger(getClass());
 
 	@Inject
 	private WebDriverFactory webDriverFactory;
