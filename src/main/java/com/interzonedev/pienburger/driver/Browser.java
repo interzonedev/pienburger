@@ -9,36 +9,36 @@ import java.util.List;
  * @author "Mark Markarian" &lt;mark@interzonedev.com&gt;
  */
 public enum Browser {
-	FIREFOX("firefox"), CHROME("chrome"), SAFARI("safari"), HTMLUNIT("htmlUnit"), IE("internetExplorer");
+    FIREFOX("firefox"), CHROME("chrome"), SAFARI("safari"), HTMLUNIT("htmlUnit"), IE("internetExplorer");
 
-	private final static List<String> ids = new LinkedList<String>();
+    private final static List<String> ids = new LinkedList<String>();
 
-	static {
-		for (Browser b : values()) {
-			ids.add(b.id());
-		}
-	}
+    static {
+        for (Browser b : values()) {
+            ids.add(b.id());
+        }
+    }
 
-	private final String id;
+    private final String id;
 
-	private Browser(String id) {
-		this.id = id;
-	}
+    private Browser(String id) {
+        this.id = id;
+    }
 
-	public String id() {
-		return id;
-	}
+    public String id() {
+        return id;
+    }
 
-	public static List<String> allIds() {
-		return ids;
-	}
+    public static List<String> allIds() {
+        return ids;
+    }
 
-	public static Browser getById(String id) {
-		for (Browser b : values()) {
-			if (b.id().equals(id)) {
-				return b;
-			}
-		}
-		return null;
-	}
+    public static Browser getById(String id) {
+        for (Browser b : values()) {
+            if (b.id().equals(id)) {
+                return b;
+            }
+        }
+        return null;
+    }
 }
