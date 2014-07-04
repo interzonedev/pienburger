@@ -28,7 +28,7 @@ import com.interzonedev.zankou.dataset.DataSets;
  * 
  * Running this will create the pienburger Spring application context.
  * 
- * @author "Mark Markarian" <mark@interzonedev.com>
+ * @author "Mark Markarian" &lt;mark@interzonedev.com&gt;
  */
 @ContextConfiguration(locations = { "classpath:spring/com/interzonedev/pienburger/applicationContext-pienburger.xml" })
 public abstract class AbstractFunctionalTest extends AbstractIntegrationTest {

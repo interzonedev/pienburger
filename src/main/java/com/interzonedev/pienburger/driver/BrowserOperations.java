@@ -17,7 +17,7 @@ import com.interzonedev.pienburger.FunctionalTestProperties;
  * gets the a specific instance of {@link FunctionalTestProperties} that holds the URL for the application under test
  * and the default timeout (in seconds) for waiting for page and element loads.
  * 
- * @author "Mark Markarian" <mark@interzonedev.com>
+ * @author "Mark Markarian" &lt;mark@interzonedev.com&gt;
  */
 public class BrowserOperations {
 

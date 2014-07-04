@@ -9,7 +9,7 @@ import org.springframework.context.ApplicationContext;
 /**
  * Factory class for getting instances of concrete implementations of {@link WebDriver} for different browsers.
  * 
- * @author "Mark Markarian" <mark@interzonedev.com>
+ * @author "Mark Markarian" &lt;mark@interzonedev.com&gt;
  */
 @Named("webDriverFactory")
 public class WebDriverFactory {

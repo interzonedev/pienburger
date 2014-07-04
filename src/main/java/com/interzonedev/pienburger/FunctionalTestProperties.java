@@ -10,7 +10,7 @@ import com.interzonedev.pienburger.driver.Browser;
  * An instance of this class is meant to be supplied to the pienburger framework for each implementing functional test
  * to specify how to run each test.
  * 
- * @author "Mark Markarian" <mark@interzonedev.com>
+ * @author "Mark Markarian" &lt;mark@interzonedev.com&gt;
  */
 public class FunctionalTestProperties {
 

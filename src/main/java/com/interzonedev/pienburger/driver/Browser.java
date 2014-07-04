@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * An enumeration of the browser executables supported by the pienburger functional testing framework.
  * 
- * @author "Mark Markarian" <mark@interzonedev.com>
+ * @author "Mark Markarian" &lt;mark@interzonedev.com&gt;
  */
 public enum Browser {
 	FIREFOX("firefox"), CHROME("chrome"), SAFARI("safari"), HTMLUNIT("htmlUnit"), IE("internetExplorer");
