@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>pienburger</artifactId>
-    <version>1.0.4-SNAPSHOT</version>
+    <version>1.0.4</version>
     <packaging>jar</packaging>
 
     <name>Spring Based Functional Test Fixture</name>
