@@ -1,22 +1,18 @@
 package com.interzonedev.pienburger;
 
-import javax.inject.Inject;
-import javax.inject.Named;
-
-import org.junit.After;
-import org.junit.Before;
-import org.openqa.selenium.WebDriver;
-import org.slf4j.LoggerFactory;
-import org.springframework.test.context.ContextConfiguration;
-
-import ch.qos.logback.classic.Logger;
-
 import com.interzonedev.pienburger.driver.Browser;
 import com.interzonedev.pienburger.driver.BrowserOperations;
 import com.interzonedev.pienburger.driver.WebDriverFactory;
 import com.interzonedev.zankou.AbstractIntegrationTest;
 import com.interzonedev.zankou.dataset.DataSet;
 import com.interzonedev.zankou.dataset.DataSets;
+import org.junit.After;
+import org.junit.Before;
+import org.openqa.selenium.WebDriver;
+import org.springframework.test.context.ContextConfiguration;
+
+import javax.inject.Inject;
+import javax.inject.Named;
 
 /**
  * Top level functional test class meant to be run with a JUnit test runner. This is meant to be subclassed by any
@@ -32,8 +28,6 @@ import com.interzonedev.zankou.dataset.DataSets;
  */
 @ContextConfiguration(locations = { "classpath:spring/com/interzonedev/pienburger/applicationContext-pienburger.xml" })
 public abstract class AbstractFunctionalTest extends AbstractIntegrationTest {
-
-    protected final Logger log = (Logger) LoggerFactory.getLogger(getClass());
 
     @Inject
     @Named("webDriverFactory")
